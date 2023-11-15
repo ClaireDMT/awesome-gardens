@@ -1,0 +1,7 @@
+<h1>Add a new plant for your <%= @garden.name %></h1>
+
+<%= simple_form_for([@garden, @plant]) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :image_url %>
+  <%= f.submit %>
+<% end %>
